@@ -1,0 +1,349 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;  
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+   
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+small {
+    font-size: .875rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    // line-height: 1.2;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include lg {
+        padding: 0 12px;
+    }
+}
+
+/* 計算欄位數 */
+/* 如果是四欄 */
+/* (4×86px)+(3×24px)=344px+72px=416px */
+/* 416/ 1296 * 100% = 32.098% */
+/* 欄位設置 總共十二欄位 */
+.col-1 {
+    width: 6.635%;
+}
+
+.col-2 {
+    width: 15.123%;
+}
+
+.col-3 {
+    width: 23.611%;
+}
+
+.col-4 {
+    width: 32.098%;
+}
+
+.col-5 {
+    width: 40.586%;
+}
+
+.col-6 {
+    width: 49.074%;
+}
+
+.col-7 {
+    width: 57.562%;
+}
+
+.col-8 {
+    width: 66.05%;
+}
+
+.col-9 {
+    width: 74.538%;
+}
+
+.col-10 {
+    width: 83.026%;
+}
+
+.col-11 {
+    width: 91.514%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* tools */
+/* 間距設置  一個單位是 4px*/
+.mr-1 {
+    margin-right: 4px;
+}
+
+.mr-3 {
+    margin-right: 12px;
+}
+
+.mr-4 {
+    margin-right: 16px;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+.mr-6 {
+    margin-right: 24px;
+}
+
+.mr-16 {
+    margin-right: 64px;
+    ;
+}
+
+.ml-1 {
+    margin-left: 4px;
+}
+
+.ml-4 {
+    margin-left: 16px;
+}
+
+.ml-6 {
+    margin-left: 24px;
+}
+
+.mb-1 {
+    margin-bottom: 4px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mb-7 {
+    margin-bottom: 28px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.mb-9 {
+    margin-bottom: 36px;
+}
+
+.mb-24 {
+    margin-bottom: 96px;
+}
+
+.pt-10 {
+    padding-top: 40px;
+}
+
+.pt-18 {
+    padding-top: 72px;
+}
+
+.py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-18 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.py-10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.py-24 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.py-40 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.p-4 {
+    padding: 16px;
+}
+
+/* font */
+.title-xl {
+    font-size: 128px;
+    letter-spacing: 15.36px;
+}
+
+.fs-3xl {
+    font-size: 128px;
+}
+
+.fs-2xl {
+    font-size: 64px;
+}
+
+.fs-md {
+    font-size: 24px;
+}
+
+.fs-sm {
+    font-size: 20px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-white {
+    color: $white;
+}
+
+/* display 設置 */
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.self-end {
+    align-self: end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* 元件設置 */
+.btn {
+    padding: 12px 24px;
+    border-radius: 32px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.link:hover {
+    opacity: 0.85;
+}
+
+
+
+
+/* utilites 設置 */
+.border {
+    // border: 1px solid var(--border-color);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* color */
+
+
+.text-primary {
+    color: $primary;
+}
+
+.h-full {
+    height: 100%;
+}

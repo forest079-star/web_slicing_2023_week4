@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  // flex: 1 1 auto;
+  border: 1px solid $gray-light;
+  cursor: default;
+  padding: 1rem;
+}
+.card-header {
+  font-size: 1rem;
+  border: 1px solid $gray-light;
+  padding: 1rem;
+}
+.card-img {
+  object-fit: cover;
+}
+.card-title {
+  margin-bottom: .5rem;
+}
+.card-text {
+  margin-bottom: .5rem;
+}

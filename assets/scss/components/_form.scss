@@ -1,0 +1,114 @@
+.form-check-input {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: top;
+  background-color: $pink;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid $black;
+  appearance: none;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba($primary, .25);
+  }
+  &[type="checkbox"] {
+    border-radius: .25em;
+  }
+  &:checked {
+    background-color: $red-dark;
+    border: 1px solid $black;
+    &[type="checkbox"] {
+      background-image: url(../images/ic_white_check.svg);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 2px solid $black;
+  }
+}
+
+.form-check-label {
+  cursor: pointer;
+  user-select: none; /* 防止文字被滑鼠選取反白 */
+  font-size: 0.875rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1rem;
+  }
+}
+
+// form controls
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  background: none;
+  outline-color: $red;
+  padding: .4375rem .75rem .5625rem .75rem;
+  @include media-breakpoint-up(md) {
+    @include font-set(.875rem, 1.3125rem);
+    padding: .5rem .75rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: .75rem 1rem .875rem 1rem;
+  }
+  &::placeholder {
+    color: $black;
+    opacity: 0.2;
+  }
+}
+
+// form textarea
+textarea {
+  &.form-control {
+    min-height: 136px;
+    font-family: inherit;
+  }
+}
+
+// form select
+.form-select {
+  display: block;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  appearance: none;
+  border: 0.1rem solid $gray-light;
+  color: #495057;
+  font-size: 0.875rem;
+  padding: .5rem .75rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1rem;
+    padding: .75rem 1rem .875rem 1rem;
+  }
+}
+
+.form-select-sm {
+  font-size: 0.875rem;
+  padding: .5rem 0 .5rem 1rem;
+  background-position: right .5rem center;
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+    padding: .625rem 0 .75rem 1rem;
+    background-position: right .75rem center;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.125rem;
+    padding: .5rem 0 .75rem 1.25rem;
+    background-position: right 1rem center;
+  }
+}
+
+// submit
+.form-submit {
+  width: 165px;
+  @include media-breakpoint-up(md) {
+    width: 200px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 350px;
+  }
+}

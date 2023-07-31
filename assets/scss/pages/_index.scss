@@ -1,0 +1,130 @@
+.bg-primary {
+  background-color: $primary;
+}
+
+.main-location{
+  margin-top: 40px;
+  @include lg{
+    margin-top: 96px;
+  }
+}
+
+
+.position-title{
+  font-size: 24px;
+  line-height: 36px;
+  @include lg{
+    font-size: 48px;
+    line-height: 72px;
+  }
+  
+  border-left: 8px solid $primary;
+  padding-left:16px;
+  margin-bottom: 24px;
+    
+
+}
+
+.position-select{
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 24px;
+
+  label {
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+  select{
+    font-size: 18px;
+    line-height: 26px;
+    padding: 6px 12px;
+    width: 100%;
+    @include lg{
+      width: 300px;
+    }
+  }
+ 
+}
+.ps-loaction{
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+ 
+}
+
+.location-group{
+  @include lg{
+    display: flex;
+    justify-content: space-between;
+      margin-bottom: 64px;
+  }
+}
+
+
+.card{
+  border: 1px solid #00000020;
+  color:#212529;
+  
+  flex-shrink: 0;
+  @include lg{
+    width: 526px;
+    margin-right: 24px;
+  }
+  img.card-img{
+    // width: 100%;
+    // object-fit: cover;
+  }
+  .card-body{
+   
+
+    h3 {
+      font-size: 24px;
+      line-height: 36px;
+      padding-left: 24px;
+        padding-right: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #00000020;;
+    }
+
+    ul{
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    li{
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 8px;
+    }
+  }
+  
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 64px;
+  height: 208px;
+  margin-top: 24px;
+  @include lg{
+    margin-bottom: 0px;
+    height: auto;
+    margin-top: 0px;
+  }
+
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
