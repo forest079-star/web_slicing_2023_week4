@@ -11,4 +11,21 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: null, $left: null) {
+  $bottom: if($bottom ==null, $top, $bottom);
+  $left: if($left ==null, $right, $left);
+  padding: $top $right $bottom $left;
+}
+
+@mixin margin($top: 0, $right: 0, $bottom: null, $left: null) {
+  $bottom: if($bottom ==null, $top, $bottom);
+  $left: if($left ==null, $right, $left);
+  margin: $top $right $bottom $left;
+}
+
 

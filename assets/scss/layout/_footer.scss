@@ -1,106 +1,109 @@
-.footer{
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
+.footer {
+  @include padding(24px, 0);
 }
 
-
-.footer-link{
+.footer-link {
   display: none;
-  @include lg{
+
+  @include lg {
     display: flex;
-    margin-bottom: 36px;
+    @include margin(0, 0, 36px, 0);
   }
-  li{
-    @include lg{
-      margin-right: 48px;
+
+  li {
+    @include lg {
+      @include margin(0, 48px, 0, 0);
     }
   }
 }
 
-.contact{
-  li{
+.contact {
+  li {
+    @include margin(0, 0, 8px, 0);
 
-    margin-bottom: 8px;
-    &:last-child{
-     
-      padding-bottom: 24px;
+    &:last-child {
+      @include padding(0, 0, 24px, 0);
     }
 
-    @include lg{
-      font-size: 36px;
-      line-height: 54px;
+    @include lg {
+      @include font(36px, 54px);
     }
   }
-  .material-symbols-outlined{
-    margin-right: 10px;
-   
-    @include lg{
-      padding-right: 20px;
-      font-size: 36px;
-        line-height: 54px;
+
+  .material-symbols-outlined {
+    @include margin(0, 10px, 0, 0);
+
+    @include lg {
+      @include padding(0, 20px, 0, 0);
+      @include font(36px, 54px);
     }
   }
 }
 
-.social-group{
+.social-group {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
 }
 
-.contact-social{
-  
-  li{
-    margin-right: 8px;
-    &:last-child{
+.contact-social {
+  li {
+    @include margin(0, 8px, 0, 0);
+
+    &:last-child {
       @include lg {
-          margin-right: 0px;
-         
-        }
+        @include margin(0, 0, 0, 0);
+      }
     }
-    @include lg{
-      margin-right: 32px;
-      margin-bottom: 24px;
+
+    @include lg {
+      @include margin(0, 32px, 24px, 0);
     }
-    img{
-        width: 24px;
-        height: 24px;
-       @include lg{
-          width: 48px;
-          height: 48px;
-       }
+
+    img {
+      width: 24px;
+      height: 24px;
+
+      @include lg {
+        width: 48px;
+        height: 48px;
+      }
     }
   }
 }
 
-.white-icon{
+.white-icon {
   filter: invert(1) brightness(2);
 }
 
-.copyRight{
-  margin-top: 16px;
-  @include lg{
+.copyRight {
+  @include margin(16px, 0, 0, 0);
+
+  @include lg {
+    @include margin(32px, 0, 0, 0);
     display: flex;
     justify-content: space-between;
   }
-  p{
-    margin-bottom: 8px;
+
+  p {
+    @include margin(0, 0, 8px, 0);
   }
-  ul{
-    @include lg{
+
+  ul {
+    @include lg {
       display: flex;
     }
   }
-  li{
-    margin-bottom: 8px;
-    @include lg{
-      margin-right: 48px;
+
+  li {
+    @include margin(0, 0, 8px, 0);
+
+    @include lg {
+      @include margin(0, 48px, 0, 0);
     }
-    &:last-child{
-      margin-right: 0;
+
+    &:last-child {
+      @include margin(0, 0, 0, 0);
     }
   }
-
 }

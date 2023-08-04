@@ -1,0 +1,70 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include lg {
+    padding: 0 12px;
+  }
+}
+
+/* 計算欄位數 */
+/* 如果是四欄 */
+/* (4×86px)+(3×24px)=344px+72px=416px */
+/* 416/ 1296 * 100% = 32.098% */
+/* 欄位設置 總共十二欄位 */
+.col-1 {
+  width: 6.635%;
+}
+
+.col-2 {
+  width: 15.123%;
+}
+
+.col-3 {
+  width: 23.611%;
+}
+
+.col-4 {
+  width: 32.098%;
+}
+
+.col-5 {
+  width: 40.586%;
+}
+
+.col-6 {
+  width: 49.074%;
+}
+
+.col-7 {
+  width: 57.562%;
+}
+
+.col-8 {
+  width: 66.05%;
+}
+
+.col-9 {
+  width: 74.538%;
+}
+
+.col-10 {
+  width: 83.026%;
+}
+
+.col-11 {
+  width: 91.514%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-full {
+  height: 100%;
+}

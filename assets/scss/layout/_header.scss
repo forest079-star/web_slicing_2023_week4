@@ -2,17 +2,24 @@
   .nav {
     display: flex;
     flex-direction: column;
-    margin: 0 -12px;
-    @include lg{
+    @include margin(0, -12px, 0 , -12px);
+
+    @include lg {
       flex-direction: row;
       justify-content: space-between;
-      align-items: center ;
-      margin: 0;
+      align-items: center;
+      @include margin(0);
+
+      a {
+        &:hover {
+          opacity: .8;
+        }
+      }
     }
   }
 
   h1 {
-    padding-left: 16px;
+    @include padding(0, 0, 0, 16px);
   }
 
   ul {
@@ -22,28 +29,24 @@
 
   li {
     border: 1px solid #fff;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-size: 16px;
-    line-height: 24px;
+    @include padding(12px, 0);
+    @include font(16px, 24px);
     font-weight: normal;
     width: 50%;
 
-    @include lg{
-      font-size: 20px;
-      line-height: 30px;
+    @include lg {
+      @include font(20px, 30px);
       width: auto;
-      border:none;
-      margin-right: 64px;
-      &:last-child{
-        margin-right: 0px;
+      border: none;
+      @include margin(0, 64px, 0, 0);
+
+      &:last-child {
+        @include margin(0, 0, 0, 0);
       }
     }
-
   }
 }
 
 .logo {
   width: 80px;
-
 }

@@ -1,21 +1,21 @@
 // base & variable
 @import "base/variables";
 @import "base/reset";
+@import "base/base";
 
 // Utilities
-@import "utilities/tools";
 @import "utilities/breakpoints";
+@import "utilities/utilities";
+@import "utilities/tools";
+
+// grid
+@import "base/grid";
 
 // layout & components
 @import "layout/header";
 @import "layout/footer";
 
 
-
-
-
 // page
-@import "base/base";
-
 @import "pages/index";
-
+@import "pages/faq";
